@@ -4,7 +4,7 @@
 
 class Rectangle:
     """Make rectangle object"""
-    
+
     number_of_instances = 0
 
     def __init__(self, width=0, height=0):
@@ -68,7 +68,7 @@ class Rectangle:
     def __repr__(self):
         """modifies repr object
         """
-        return("Rectangle({}, {})".format(self.width, self.height))
+        return ("Rectangle({}, {})".format(self.width, self.height))
 
     def __del__(self):
         """ modifies del object
