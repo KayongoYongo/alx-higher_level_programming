@@ -69,7 +69,9 @@ class Rectangle:
     def __repr__(self):
         """modifies repr object
         """
-        return ("Rectangle({}, {})".format(self.width, self.height))
+        rect = "Rectangle(" + str(self.__width)
+        rect += ", " + str(self.__height) + ")"
+        return (rect)
 
     def __del__(self):
         """ modifies del object
