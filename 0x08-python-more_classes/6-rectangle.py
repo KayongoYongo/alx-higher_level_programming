@@ -9,6 +9,7 @@ class Rectangle:
 
     def __init__(self, width=0, height=0):
         """Make a new rectangle object"""
+        type(self).number_of_instances += 1
         self.height = height
         self.width = width
 
