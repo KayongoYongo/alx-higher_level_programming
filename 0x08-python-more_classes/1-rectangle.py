@@ -3,9 +3,10 @@
 
 
 class Rectangle:
-    """make rectangle object"""
+    """Make rectangle object"""
 
     def __init__(self, width=0, height=0):
+        """Make a new rectangle object"""
         self.height = height
         self.width = width
 
