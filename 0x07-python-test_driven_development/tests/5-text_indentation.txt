@@ -1,0 +1,20 @@
+#5-text_indentation.txt
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+>>> text_indentation("hello. how are you?")
+hello.
+<BLANKLINE>
+how are you?
+<BLANKLINE>
+>>> text_indentation("hello. how are you I'm doing fine")
+hello.
+<BLANKLINE>
+how are you I'm doing fine
+>>> text_indentation("hello")
+hello
+>>> text_indentation(123)
+Traceback (most recent call last):
+TypeError: text must be a string
+>>> text_indentation()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: text_indentation() missing 1 required positional argument: 'text'
