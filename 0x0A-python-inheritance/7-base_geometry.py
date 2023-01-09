@@ -3,6 +3,7 @@
 
 
 class BaseGeometry:
+    """Reprsent base geometry."""
 
     def __init__(self):
         """initialize class"""
@@ -13,6 +14,7 @@ class BaseGeometry:
         raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
+        """Validate a parameter as an integer."""
         if not isinstance (value, int):
             raise TypeError ("{} must be an integer".format(name))
         
