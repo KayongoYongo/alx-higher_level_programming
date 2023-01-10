@@ -5,4 +5,4 @@
 def write_file(filename="", text=""):
     """number of lines"""
     with open(filename, mode='w', encoding='utf-8') as f:
-       return (f.write(text))
+        return (f.write(text))
