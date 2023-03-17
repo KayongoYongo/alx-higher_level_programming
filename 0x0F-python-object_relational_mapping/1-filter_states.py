@@ -7,8 +7,11 @@ if __name__ == "__main__":
     db = MySQLdb.connect(user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3],
                          host="localhost", port=3306)
     c = db.cursor()
-    c.execute("SELECT * FROM states WHERE name
-              LIKE 'N%' ORDER BY states.id ASC")
+    """Three quotes have to be used in the query statement.
+    Otherwise, the python interpreter will return an error,
+    stating that it is an unterminated string literal"""
+    c.execute("""SELECT * FROM states WHERE name
+              LIKE 'N%' ORDER BY states.id ASC""")
     for i in c.fetchall():
         print(i)
 
