@@ -10,8 +10,10 @@ if __name__ == "__main__":
     """Three quotes have to be used in the query statement.
     Otherwise, the python interpreter will return an error,
     stating that it is an unterminated string literal"""
+    """LIKE BINARY key word makes the comparison case
+    sensitive"""
     c.execute("""SELECT * FROM states WHERE name
-              LIKE 'N%' ORDER BY states.id ASC""")
+              LIKE BINARY 'N%' ORDER BY states.id ASC""")
     for i in c.fetchall():
         print(i)
 
