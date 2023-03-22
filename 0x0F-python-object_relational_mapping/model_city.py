@@ -2,7 +2,7 @@
 """Mapping python classes into columns"""
 
 from model_state import Base
-from sqlalchemy import Column, Integer, String, ForeignKey, Metadata
+from sqlalchemy import Column, Integer, String, ForeignKey
 from sqlalchemy.ext.declarative import declarative_base
 
 
