@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""Display the value of an x-request ID"""
+
 
 import urllib.request
 import sys
